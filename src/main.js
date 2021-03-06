@@ -29,6 +29,12 @@ const router = new VueRouter({
   routes:[
     {
       // 发现音乐
+      path:"/",
+      redirect:'/discovery',
+      name:"home" //设置发现音乐为主页面
+    },
+    {
+      // 发现音乐
       path:"/discovery",
       component:discovery
     },
@@ -62,7 +68,8 @@ const router = new VueRouter({
       path:"/result",
       component:result
     }
-  ]
+  ],
+  // mode:"history"
 })
 
 
